@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Moul&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="../upload/resource/Logo.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="">ឧបករណ័អេឡិចត្រូនិច</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">កម្មវិធី-ហ្គេម</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">វិទ្យាសាស្រ្ត-អាវកាស</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">កំសាន្ដ-ភាពយន្ត</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <container>
+        <div class="flex justify-between items-center mt-10 ml-5">
+            <h1 class="text-2xl font-bold"></h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 w-[92%] mx-auto">
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                <div>
+                    <a href="">
+                        <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                            src="../upload/img/25/07/27/01/img-content/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+            </div>
+
+
+
+
+
+
+    </container>
+    <footer class=" py-4 mt-10">
+        <div class="w-[92%] mx-auto flex justify-between items-center text-center">
+            <p>&copy; 2023 រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+            <p class="text-sm text-gray-500">បង្កើតដោយ</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+
+</html>

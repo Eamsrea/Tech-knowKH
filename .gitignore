@@ -787,3 +787,10 @@ src/input.css
 src/output.css
 package-lock.json
 package.json
+node_modules/.DS_Store
+node_modules/@jridgewell/.DS_Store
+node_modules/@parcel/.DS_Store
+node_modules/@tailwindcss/.DS_Store
+node_modules/detect-libc/.DS_Store
+node_modules/jiti/.DS_Store
+node_modules/lightningcss/.DS_Store
