@@ -1,52 +1,156 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Battambang|Helvetica+Serif" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nokora:wght@400;700&amp;display=swap" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Moul&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
+
 <body>
-  <header>      <!-- Mobile Navbar -->
-    <nav>
-      <ul class="md:hidden flex fixed justify-center w-screen py-4">
-        <button class="absolute left-4">
-          <i class="fas fa-bars"></i>
-          <a class="active"></a>
-        </button>
-        <a href="index.html" class="flex">
-          <img src="Logo.png" alt="Logo" class="h-10 w-10">Tech-Know
-        </a>
-      </ul>
-    </nav>
-    <!-- Desktop Navbar -->
-    <nav class="hidden md:flex fixed justify-between w-screen py-4">
-      <a href="index.html" class="flex">
-          <img src="Logo.png" alt="Logo" class="h-10 w-10">
-          Tech-Know
-      </a>
-      <ul class="flex space-x-4">
-        <li><a href="electric-device.html" class="hover:text-gray-400">ឧបករណ័អឡិចត្រូនិច</a></li>
-        <li><a href="program-game.html" class="hover:text-gray-400">កម្មវិធី-ហ្គេម</a></li>
-        <li><a href="scient-space.html" class="hover:text-gray-400">បច្ចែកវិទ្យា-អាវកាស</a></li>
-        <li><a href="entertainment.html" class="hover:text-gray-400">កំសាន្ដ-ភាពយន្ត</a></li>
-        <li></li>
-      </ul>
-    </nav>
+    <header>
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="../upload/resource/Logo.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="electric-device.html">ឧបករណ័អេឡិចត្រូនិច</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="program-game.html">កម្មវិធី-ហ្គេម</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="science-space.html">វិទ្យាសាស្រ្ត-អាវកាស</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="entertainment.html">កំសាន្ដ-ភាពយន្ត</a>
+                    </li>
 
-  </header>
-  <container>
-    <div class="flex justify-center items-center h-screen">
-      <h1 class="text-4xl font-bold">Welcome to Tech-Know</h1>
-    </div>
-  </container>
-  <footer class="bg-gray-800 text-white p-4">
-    <div class="flex justify-center">
-      <p>&copy; 2023 Tech-Know. All rights reserved.</p>
-    </div>
-  </footer>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
 
+    <container>
+        <div class="flex justify-between items-center mt-10 ml-5"> <!-- title -->
+            <h1 class="text-2xl font-bold">កម្មវិធី-ហ្គេម</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 w-[92%] mx-auto"> <!-- 1st content-->
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!-- 1st colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--2nd colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--3rd colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 w-[92%] mx-auto"> <!-- 2nd content-->
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!-- 4th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--5th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--6th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 w-[92%] mx-auto"> <!-- 3rd content-->
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!-- 4th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--5th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--6th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 w-[92%] mx-auto"> <!-- 4th content-->
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!-- 4th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--5th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-md"> <!--6th colume-->
+                <a href="article/270525001.html">
+                    <img class="w-auto h-auto object-cover rounded-lg mb-3"
+                        src="upload/img/25/07/27/01/4k74vh5n.png" alt="Placeholder Image">
+                    <p class=" mb-3">Nitendo ទឹបននិងប្រកាសចេញម៉ាស៊ីនលេងហ្គេមកាន់ដៃថ្មី ដែលប្រិយមិត្តជាច្រើនកំពុងទន្ទឹងរង់ចាំយូរ បានមកដល់ហើយ </p>
+                </a>
+            </div>
+        </div>        
+    </container>
+    <footer class="bg-gray-800 text-white py-4 mt-10">
+        <div class="w-[92%] mx-auto text-center">
+            <p>&copy; 2023 All rights reserved.</p>
+        </div>
+    </footer>
+    <script> <!-- Toggle Menu Script -->
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
 </body>
+
+
 </html>
