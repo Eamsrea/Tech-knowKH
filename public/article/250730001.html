@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../main.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Moul&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <a class="flex items-center" href="../index.html">
+                    <img class="w-16 cursor-pointer" src="../upload/resource/Logo.png" alt="...">
+                    <h1 class="text-1xl font-bold inline-block ml-2">Tech-Know</h1>
+                </a>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="../categories/electric-device.html">ឧបករណ័អេឡិចត្រូនិច</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="../categories/program-game.html">កម្មវិធី-ហ្គេម</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="../categories/science-space.html">វិទ្យាសាស្រ្ត-អាវកាស</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="../categories/entertainment.html">កំសាន្ដ-ភាពយន្ត</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <container>
+        <div class="mt-10 w-[92%] mx-auto">
+            <div class="bg-white p-5 rounded-lg shadow-md">
+                    <h2 class="text-xl font-bold mb-3">តើនេះជាអនាគតនៃ light-base Computer ឬ?</h2>
+                    <p class="text-blue-900">ចេញផ្សាយ៖ 30 ឧសភា 2025</p>
+                    <img class="w-auto h-auto object-cover mx-auto rounded-lg mt-10 mb-10"
+                        src="../upload/img/25/07/30/250530001.png" alt="Placeholder Image">
+                    <p class="mb-3">សព្វថ្ងៃនេះចំនួននៃ Transistors (binary switches ដែលជាភាសានៃកុំព្យូទ័រ) នៅក្នុង microprocessor កើនឡើងទ្វេដងរៀងរាល់ឆ្នាំ។ ដើម្បីបំពាក់ត្រង់ស៊ីស្ទ័រកាន់តែច្រើនទៅក្នុងបន្ទះ Chip ពួកវាត្រូវតែធ្វើឱ្យតូចជាងមុន ដែលនាំឱ្យដំណើរការលឿនជាងមុន។ ដោយសព្វថ្ងៃនេះគេអាចផលិតវាបានក្នុងទំហំដល់តូច 3nm ដែកតូចជាងសសៃសក់មនុស្ស ជាង 30,000 ទៅ 40,000 ដងឯណោះ។ 
+                        ដែលអាចមានចំនួនចាប់ពី រាប់ពាន់លាន ដល់ ពាន់ពាន់លាន transister ឧទាហរណ៍ដូចជា Intel Broadwell-EP Xeon មាន 7.2 ពាន់លាន transistors ខណៈពេលដែល 32-core AMD Epyc មាន 19.2 ពាន់លាន។ 
+                        ថ្មីៗនេះ បន្ទះឈីប AI មួយចំនួនដូចជាបន្ទះឈីបជំនាន់ទី 2 របស់ Graphcore ត្រូវបានរចនាឡើងសំរាប់ Machine learning ធំៗ ដោយចំនួន transistor ឈានដល់ 60 ពាន់លាន ឬ 120 ពាន់លាន។ហើយ ចំណែក Chip AI Blackwell របស់ Nvidia ដែលទើបនិងប្រកាសវិញ មានចំនួនដល់ទី 208 ពាន់លានឯណោះ។
+                    </p>
+                    </p>
+                    <img class="w-auto h-auto object-cover mx-auto mt-10 mb-10"
+                    src="../upload/img/25/07/30/250530002.png" alt="Placeholder Image">
+                    <p class=" mb-3">តើការ បង្កើនចំនួនបែបនេះមានផលវិបាកដែរឬទេ?</br>
+                        ការបង្កើនចំនួននៃត្រង់ស៊ីស្ទ័រនៅក្នុងមីក្រូឈីប គឺបណ្តាលឱ្យមានកំដៅកាន់តែក្តៅខ្លាំង ប្រសិនបើដំណើរការគណនាកាន់ច្រើន ត្រង់ស៊ីស្ទ័រធ្វើការផ្ទេរទិន្នន័យពីមួយទៅមួយកាន់តែច្រើននាំអោយចរន្ត(អេឡិចត្រុង)មានកាន់តែច្រើន ដែលបណ្ដាលធ្វើអោយ​ Microchip កាន់តែឡើងកម្តៅ។</br>
+                        </br>
+                        តើ​អ្វី​ទៅ​ជា Light-Based Computing?</br>
+                        Photonic computing ការ​គណនា​ដែល​ប្រើ​ពន្លឺ​គឺ​ជា​ការ​ប្រើ​ប្រាស់ Photon (ពន្លឺ) ពី​ឡាស៊ែរ ឬ​ឌីយ៉ូត​ក្នុង​គោល​បំណង​គណនា។ សម្រាប់គ្រឿងអេឡិចត្រូនិច និងគ្រឿងកុំព្យូទ័ភាគច្រើនប្រើប្រាស់ អេឡិចត្រុងសម្រាប់ការគណនា។</br>
+                        </br>
+                        Optical Computer ប្រើប្រាស់ត្រង់ស៊ីស្ទ័រអុបទិក (Optical Transistor) ខណៈពេលដែលទិន្នន័យត្រូវបានបញ្ជូនតាម Photons( ពន្លឺ)ព័ត៌មានត្រូវបានផ្ទេរដោយប្រើខ្សែកាបអុបទិក (Fiber Optic)។</br> 
+                        ប្រសិនបើ Optical Computer ដំណើរពេញលេញនោះ អត្ថប្រយោជន៏ដ៏សំខាន់របស់វានោះគឺ មិនចាំបាច់បំប្លែងព័ត៌មានទៅជាប្រព័ន្ធគោលពីរនោះទេ ដែលធ្វើអោយល្បឿនគណនាដំណើរការកាន់តែលឿន។ដើម្បីធ្វើឱ្យការគណនាផ្អែកលើពន្លឺមានមុខងារពេញលេញ ចាំបាច់ត្រូវមានមីក្រូឈីបដែលប្រើ photons ជំនួសឱ្យអេឡិចត្រុង។</br>
+                        </br>
+                        អត្តប្រយោជន៏ នៃ Photonics Computing</br>
+                    </p>
+                    <ul class="list-disc pl-5 mb-3">
+                        <li>មានកំដៅតិច</li>
+                        <li>ប្រើប្រាស់ថាមពលតិច</li>
+                        <li>មានល្បឿនលឿន ជាពិសេសសំរាប់ប្រើប្រាស់លើវិស័យ AI </li>
+                        <li>គណនាការងារច្រើនក្នុងពេលតែមួយ</li>
+                    </ul>
+                    <img class="w-auto h-auto object-cover mx-auto rounded-lg mt-10 mb-10"
+                    src="../upload/img/25/07/30/250530003.png" alt="Placeholder Image">
+                    <p class="mb-3">ក្ទោះបីជាវាមិនទាន់ចេញជារូបរៀងពេញលេញ តែក័មានក្រុមហ៊ុនមួយចំនួនបាននិងកំពុងអភិវឌ្ឍន៏វាផង ដូចជាក្រុមហ៊ុន QANT បានបញ្ចេញ Commercial light-based computer chip ហៅថា NPU សំរាប់ប្រើលើ Machine learning, AI trainning។ ចំពោះការផ្ទេរទិន្នន័យវិញ ក៏មានក្រុមហ៊ុនជាច្រើនបានបញ្ចេញ Optical interconnects (ខ្សែរ fiber ដែលភ្ជាប់ចេញពី Circuit ឬ System ដោយប្រើប្រាស់ពន្លឺ) សំរាប់ Data Center របស់ខ្លួន ដូចជា Nvidia ជាដើម។ ដូចនេះ នៅថ្ងៃអនាគតគេអាចនិងយកវា ប្រើប្រាស់លើ Microprocessor ជាក់ជាមិនខាន។ប៉ុន្តែឧបសគ្គដ៏ធំនោះគឺទំហំ ព្រោះថាបើចង់អោយ Microprocessor ប្រើប្រាស់ពន្លឺជំនួសអោយ Electronic Trasistor នោះដែលតម្រូវអោយពន្លឺនោះមានទំហំតូចបំផុត៕នៅក្នុងទ្រឹស្ដីនៃអាតូម ពន្លឺមានទំហំធំ ដែលផ្តល់នូវឧបសគ្គនៅពេលព្យាយាមប្រើបច្ចេកទេសដើម្បីពត់ពន្លឺនៅខាងក្នុងមីក្រូឈីប (ដោយពន្លឺដែលយើងអាចមើលឃើញសព្វថ្ងៃមានទំហំធំជាងអាតូម ប្រហែល 1000 ដង)។</p>
+            </div>
+        </div>
+    </container>
+    <footer class="bg-gray-800 text-white py-4 mt-10">
+        <div class="w-[92%] mx-auto text-center">
+            <p>រក្សាសិទ្ធិដោយ៖ Tech-Know &copy; 2025</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+
+</html>
